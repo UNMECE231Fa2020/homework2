@@ -2,15 +2,15 @@
 Homework 2 of ECE231. Due 10/3/2020 at midnight.
 
 ## Context
-For this assignment, you are going to do a classic problem. Create a class for complex numbers. You are given the file `main.cpp` which will test your complex class. You'll have to create two additional files:
-  1. `A cpp file that will contain your contructors and functions`
-  1. `A h (or hpp) file that will contain your class declaration, constructor declarations, and function declarations`
-Make sure that `main.cpp` includes your h (or hpp) file. In your h (or hpp) you should have these attributes (data members):
+For this assignment, you are going to do a classic problem. Create a class for complex numbers. You are given the files `complex.hpp` which declares some methods and operator overloads for the `Complex` class. You are also given `main.cpp`, which will test the `Complex` class. You'll have to create `A cpp file that will contain your contructors, methods, and operator overloading`.
 
-    double real
-    double imag
-    
-and these prototypes:
+## complex.hpp
+In `complex.hpp`, the class has these attributes (data members):
+
+    double _real
+    double _imag
+  
+You can edit `_real` and `_imag`, as long as you have two double variables to represent the real and imaginary part of a complex number. The head also has these prototypes:
     
     Default constructor (no arguments)
     Default constructor (with arguments)
@@ -18,30 +18,42 @@ and these prototypes:
     A getter method to get the real member
     A getter method to get the imaginary number
     A method to print the attributes 
-    A method to add two complex numbers
     A method to subtract two complex numbers
     A method to multiply two complex numbers
-    A method to divide two complex numbers
     A method to get the complex conjugate
     A method to get the magnitude of a complex number
     A method to get the phase (or angle) of a complex number
     
-and to overload these operators (as prototypes):
+and the operator overloading declarations:
 
     +
-    -
-    *
     /
     =
     <<
     >>
     
-And in your cpp file you must implement all prototypes defined above. You should create a Makefile that compiles and runs your code smoothly.
+Feel free to edit the inputs, just make sure that you are being consistent with your headerfile declarations and function implementations.
+
+Additionally, the header file is missing:
+  
+    A getter method to get the real member
+    A getter method to get the imaginary number
+    A method to add two complex numbers
+    A method to divide two complex numbers
+    
+It is also missing these operator overloading declarations:
+
+    -
+    *
+    
+Your job is to fill in what is missing, and in your cpp file you must implement all prototypes defined above. You will create a Makefile that compiles and runs your code smoothly.
+
+To see an example of creating a class with mutiple files, please see [this](https://github.com/UNMECE231Fa2020/CppClasses/tree/master/IntList).
 
 ## Rubric
 
-    Creation of header file and prototypes: 20%
+    Completing the header file and prototypes: 20%
     Creation of cpp files and implementation of methods: 30%
     Correct implementation of overloading operators: 20%
-    Creation of Makefile: 10%
-    Clean code: 20%
+    Creation of Makefile: 20%
+    Clean and readable code: 10%
