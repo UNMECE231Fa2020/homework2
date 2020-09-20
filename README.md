@@ -52,8 +52,11 @@ To see an example of creating a class with mutiple files, please see [this](http
 
 ## Rubric
 
-    Completing the header file and prototypes: 20%
-    Creation of cpp files and implementation of methods: 30%
-    Correct implementation of overloading operators: 20%
-    Creation of Makefile: 20%
-    Clean and readable code: 10%
+|Requirement                                         |Score  |
+|  :---:                                             | :---: |
+|Completing the header file and prototypes           | 20%   |
+|Creation of cpp files and implementation of methods | 30%   |
+|Correct implementation of overloading operators     | 20%   |
+|Creation of Makefile                                | 20%   |
+|Clean and readable code                             | 10%   |
+|Total                                               | 100%  |
