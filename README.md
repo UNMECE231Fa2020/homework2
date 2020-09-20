@@ -46,9 +46,9 @@ It is also missing these operator overloading declarations:
     -
     *
     
-Your job is to fill in what is missing, and in your cpp file you must implement all prototypes defined above. You will create a Makefile that compiles and runs your code smoothly.
+Your job is to fill in what is missing, and in your cpp file, you must implement all prototypes defined above. You will create a Makefile that compiles and runs your code smoothly.
 
-To see an example of creating a class with mutiple files, please see [this](https://github.com/UNMECE231Fa2020/CppClasses/tree/master/IntList).
+To see an example of creating a class with multiple files, please see [this](https://github.com/UNMECE231Fa2020/CppClasses/tree/master/IntList).
 
 ## Rubric
 
